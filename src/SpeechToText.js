@@ -37,9 +37,25 @@ const SpeechToText = () => {
   }, []);
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "black",
+        border: transcripts.length > 0 ? "solid white 8px" : null,
+        borderRadius: transcripts.length > 0 ? 20 : null,
+      }}
+    >
       {transcripts.map((transcript, index) => (
-        <p key={index}>{transcript}</p>
+        <div
+          key={index}
+          style={{
+            backgroundColor: "black",
+            color: "white",
+            fontSize: 100,
+            borderRadius: 20,
+          }}
+        >
+          {transcript}
+        </div>
       ))}
     </div>
   );

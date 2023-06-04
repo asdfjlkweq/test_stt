@@ -1,11 +1,9 @@
 import React from "react";
-import WebcamComponent from "./WebcamComponents";
 import SpeechToText from "./SpeechToText";
 
 function App() {
   return (
-    <div className="App">
-      <WebcamComponent />
+    <div style={{ backgroundColor: "black", height: "1100px" }} className="App">
       <SpeechToText />
     </div>
   );
